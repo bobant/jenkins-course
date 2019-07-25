@@ -1,4 +1,4 @@
-node {
+node(label: 'builder') {
   stage('do something with git') {  
     sshagent (credentials: ['github-key']) {
       // get the last commit id from a repository you own
